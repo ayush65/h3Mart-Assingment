@@ -51,3 +51,20 @@
   font-weight: 100;
   color: gray;
 }
+
+@media screen and (max-width: 660px) {
+  .th-hidden-mobile-view {
+    display: none;
+  }
+  .data-table {
+    width: -5%;
+    margin-left: 4%;
+    margin-top: -18%;
+  }
+  .currency-img {
+    display: none;
+  }
+  .btn-view-more {
+    margin-left: 30%;
+  }
+}

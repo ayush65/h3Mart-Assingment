@@ -37,10 +37,10 @@ const TableData = () => {
           <th>Name</th>
           <th>Price</th>
           <th>Market Cap</th>
-          <th>VWAP(24hr)</th>
-          <th>Suppy</th>
-          <th>Volume(24hr)</th>
-          <th>Change(24hr)</th>
+          <th className='th-hidden-mobile-view'>VWAP(24hr)</th>
+          <th className='th-hidden-mobile-view'>Suppy</th>
+          <th className='th-hidden-mobile-view'>Volume(24hr)</th>
+          <th className='th-hidden-mobile-view'>Change(24hr)</th>
         </tr>
 
         {data.map((item) => {
@@ -58,10 +58,18 @@ const TableData = () => {
               </td>
               <td>{getCurrencyInDollar(item.priceUsd)}</td>
               <td>{getCurrencySystem(item.marketCapUsd)}</td>
-              <td>{getCurrencyInDollar(item.vwap24Hr)}</td>
-              <td>{getCurrencySystem(item.supply)}</td>
-              <td>{getCurrencySystem(item.volumeUsd24Hr)}</td>
-              <td>{getPercentChangeIn24Hr(item.changePercent24Hr)}</td>
+              <td className='th-hidden-mobile-view'>
+                {getCurrencyInDollar(item.vwap24Hr)}
+              </td>
+              <td className='th-hidden-mobile-view'>
+                {getCurrencySystem(item.supply)}
+              </td>
+              <td className='th-hidden-mobile-view'>
+                {getCurrencySystem(item.volumeUsd24Hr)}
+              </td>
+              <td className='th-hidden-mobile-view'>
+                {getPercentChangeIn24Hr(item.changePercent24Hr)}
+              </td>
             </tr>
           );
         })}
