@@ -1,6 +1,6 @@
 /** @format */
 
-#customers {
+.data-table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 70%;
@@ -14,7 +14,7 @@
   padding: 1px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-#customers tr:hover {
+.data-table tr:hover {
   background-color: #e8e8e8;
 }
 .btn-view-more {
@@ -31,17 +31,17 @@
   flex-direction: column;
 }
 
-#customers td,
-#customers th {
+.data-table td,
+.data-table th {
   border: 1px solid white;
   padding: 8px;
 }
 
-#customers tr:nth-child(every) {
+.data-table tr:nth-child(every) {
   background-color: white;
 }
 
-#customers th {
+.data-table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;

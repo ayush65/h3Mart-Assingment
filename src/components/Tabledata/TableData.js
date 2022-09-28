@@ -31,7 +31,7 @@ const TableData = () => {
   return (
     <div>
       <div className='App'></div>
-      <table id='customers'>
+      <table className='data-table'>
         <tr>
           <th>Rank</th>
           <th>Name</th>
