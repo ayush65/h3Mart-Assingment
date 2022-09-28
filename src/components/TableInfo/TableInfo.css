@@ -1,0 +1,36 @@
+/** @format */
+
+.currency-info-lists {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246))
+    rgb(255, 255, 255);
+  padding: 0 10rem;
+  height: 15rem;
+}
+.info-container {
+  margin-top: -1%;
+}
+.currency-info-list {
+  text-align: center;
+  font-weight: 600;
+  color: white;
+}
+@media screen and (max-width: 950px) {
+  .currency-info-lists {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .currency-info-lists {
+    height: 8rem;
+  }
+  .currency-info:nth-child(2) {
+    text-align: left;
+  }
+
+  .currency-info-list {
+    visibility: hidden;
+  }
+}
